@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: greetapi-config
+data:
+  GREETING_PREFIX: "Hello"
+  PORT: "5000"
