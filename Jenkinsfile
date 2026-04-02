@@ -19,8 +19,8 @@ pipeline {
         stage('Test') {
             steps {
                 sh '''
-                    pip install flask pytest --quiet
-                    pytest test_app.py -v
+                    python3 -m pip install flask pytest --quiet --break-system-packages
+                    python3 -m pytest test_app.py -v
                 '''
             }
         }
