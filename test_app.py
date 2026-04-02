@@ -14,7 +14,7 @@ def test_greet_default(client):
     response = client.get("/greet")
     assert response.status_code == 200
     data = response.get_json()
-    assert data["message"] == "Hello, World!"
+    assert data["message"] == "Hey, World!"
 
 
 def test_greet_with_name(client):
@@ -22,7 +22,7 @@ def test_greet_with_name(client):
     response = client.get("/greet?name=Alice")
     assert response.status_code == 200
     data = response.get_json()
-    assert data["message"] == "Hello, Alice!"
+    assert data["message"] == "Hey, Alice!"
 
 
 def test_greet_returns_json(client):
