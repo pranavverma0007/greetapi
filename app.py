@@ -3,7 +3,7 @@ import os
 
 app = Flask(__name__)
 
-GREETING_PREFIX = os.environ.get("GREETING_PREFIX", "Hello")
+GREETING_PREFIX = os.environ.get("GREETING_PREFIX", "Hey")
 
 
 @app.route("/greet")
